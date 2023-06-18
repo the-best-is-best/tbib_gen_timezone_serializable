@@ -21,7 +21,7 @@ class GenerateTimezone {
 
 void main() {
   initializeTimeZones();
-  JsonTimezoneSerializable.init('Africa/Cairo');
+  JsonTimezoneSerializable.init = 'Africa/Cairo';
   final json = {
     "date": "2021-08-01T00:00:00.000Z",
     "timezone": DateTime.now().toIso8601String()

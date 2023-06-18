@@ -1,3 +1,5 @@
+// ignore_for_file: avoid_setters_without_getters
+
 import 'package:json_annotation/json_annotation.dart';
 import 'package:tbib_gen_timezone_serializable/src/ext_in_timezone/ext_timezone.dart';
 import 'package:timezone/timezone.dart';
@@ -10,9 +12,7 @@ class JsonTimezoneSerializable {
   static late String _location;
 
   /// add your location here
-  static void init(String loc) {
-    _location = loc;
-  }
+  static set init(String loc) => _location = loc;
 }
 
 /// use this annotation to convert json to [TZDateTime] and vice versa

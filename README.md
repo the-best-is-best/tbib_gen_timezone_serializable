@@ -10,7 +10,7 @@ Use it for make json serializable support TZDateTime Field
 
 ```dart
    String location=FlutterTimezone.getLocalTimezone();
-  JsonTimezoneSerializable.init();
+  JsonTimezoneSerializable.init = location;
 ```
 
 ### step 2
