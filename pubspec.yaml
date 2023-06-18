@@ -1,6 +1,7 @@
 name: tbib_gen_timezone_serializable
 description: This Package for support TZDateTime to Json serializable.
 version: 0.0.1
+homepage: "https://github.com/the-best-is-best/tbib_gen_timezone_serializable"
 
 environment:
   sdk: ">=3.0.0 <4.0.0"
