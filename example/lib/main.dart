@@ -10,7 +10,7 @@ part 'main.g.dart';
 @JsonSerializable()
 class GenerateTimezone {
   final DateTime date;
-  @JsonTimezoneConverter()
+  @JsonDateTimeOffsetConverter()
   final TZDateTime timezone;
 
   GenerateTimezone(this.date, this.timezone);
@@ -24,9 +24,9 @@ void main() {
   JsonTimezoneSerializable.init = 'Africa/Cairo';
   final json = {
     "date": "2021-08-01T00:00:00.000Z",
-    "timezone": DateTime.now().toIso8601String()
+    "timezone": DateTime.now().toIsoDateTimeUTCString
   };
   final generateTimezone = GenerateTimezone.fromJson(json);
   log("origin time: ${DateTime.now().toIso8601String()}");
-  log(generateTimezone.timezone.toIso8601());
+  log(generateTimezone.timezone.toIsoDateTimeLocalString);
 }

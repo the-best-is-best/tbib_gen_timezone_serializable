@@ -34,3 +34,5 @@ Use it for make json serializable support TZDateTime Field
 
 - don't use timezone.toIso8601String();
 - but use timezone.toIso8601();
+- in version 0.0.2 can format date
+  <a href="https://pub.dev/packages/tbib_timezone_offset"> click here to more details </a>
