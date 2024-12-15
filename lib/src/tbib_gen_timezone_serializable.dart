@@ -49,9 +49,9 @@ class JsonTimezoneWithOffsetIsoConverter
 }
 
 /// use this annotation to convert json to [TZDateTime] and vice versa
-class JsonTimezoneUTCIsoConverter implements JsonConverter<TZDateTime, String> {
-  /// Creates a new [JsonTimezoneUTCIsoConverter] with the given ["location"].
-  const JsonTimezoneUTCIsoConverter();
+class JsonTimezoneStringConverter implements JsonConverter<TZDateTime, String> {
+  /// Creates a new [JsonTimezoneStringConverter] with the given ["location"].
+  const JsonTimezoneStringConverter();
 
   @override
   TZDateTime fromJson(String json) {

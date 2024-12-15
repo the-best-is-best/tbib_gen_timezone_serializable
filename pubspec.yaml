@@ -1,6 +1,6 @@
 name: tbib_gen_timezone_serializable
 description: This Package for support TZDateTime to Json serializable.
-version: 0.0.2
+version: 1.0.1
 homepage: "https://github.com/the-best-is-best/tbib_gen_timezone_serializable"
 
 environment:
@@ -10,12 +10,12 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  json_annotation: ^4.8.1
-  timezone: ^0.9.2
-  tbib_timezone_offset: ^0.0.2
+  json_annotation: ^4.9.0
+  timezone: ^0.10.0
+  tbib_timezone_offset: ^1.1.0
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  mocktail: ^0.3.0
-  very_good_analysis: ^5.0.0
+  mocktail: ^1.0.4
+  very_good_analysis: ^6.0.0

@@ -10,7 +10,7 @@ part 'main.g.dart';
 @JsonSerializable()
 class GenerateTimezone {
   final DateTime date;
-  @JsonDateTimeOffsetConverter()
+  @JsonTimezoneConverter()
   final TZDateTime timezone;
 
   GenerateTimezone(this.date, this.timezone);

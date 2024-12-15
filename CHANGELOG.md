@@ -1,3 +1,11 @@
+## 1.0.1
+
+- upgrade dep
+
+## 1.0.0
+
+-solve dependance on [tbib_timezone_offset]
+
 ## 0.0.2
 
 - now can use JsonTimezoneUTCIsoConverter to send utc time to api

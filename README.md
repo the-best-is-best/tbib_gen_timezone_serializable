@@ -30,9 +30,25 @@ Use it for make json serializable support TZDateTime Field
 
   ```
 
+  ## Can make date time picker
+
+TBIBDatePickerFormField(
+          title: 'Date time picker',
+          onSaved: (value) {},
+          datePickerStyle: TBIBDatePickerStyle(
+            isDateAndTime: true,
+            getTime: ({required date}) {
+              log('date time is $date');
+            },
+            initDate: DateTime.now().add(const Duration(days: 5)),
+            startDate: DateTime.now(),
+            endDate: DateTime.now().add(const Duration(days: 10)),
+          ),
+        ),
+
 ### Note
 
 - don't use timezone.toIso8601String();
 - but use timezone.toIso8601();
-- in version 0.0.2 can format date
+- in version 1.1.0 can format date
   <a href="https://pub.dev/packages/tbib_timezone_offset"> click here to more details </a>
