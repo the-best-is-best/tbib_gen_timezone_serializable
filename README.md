@@ -32,6 +32,7 @@ Use it for make json serializable support TZDateTime Field
 
   ## Can make date time picker
 
+```dart
 TBIBDatePickerFormField(
           title: 'Date time picker',
           onSaved: (value) {},
@@ -45,6 +46,7 @@ TBIBDatePickerFormField(
             endDate: DateTime.now().add(const Duration(days: 10)),
           ),
         ),
+```
 
 ### Note
 
